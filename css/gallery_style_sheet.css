@@ -1,0 +1,115 @@
+
+/*make the top dropdown menu bar*/
+html, body{
+  background: #8BC34A;
+  width: 100%;
+  text-align:center;
+  margin: 0px;
+  height: 100%;
+  font-family:'Lato';
+}
+
+#body-image {
+	margin-top: 60px;
+}
+
+#menu_wrap {
+  width:90%;
+  position: relative;
+  margin-right: auto;
+  margin-left:auto;
+  background: #689F38;
+}
+
+#main-handle {
+	width: 50%;
+	float: right;
+	margin-top: -1px;
+}
+
+#main-navigation{
+  min-height: 25px;
+  padding-top: 10px;
+  padding-left:0px;
+  margin: 0px 0px 0px 2px;
+  text-align:left;
+}
+
+#main-handle {
+	width: 605px;
+	float: right;
+	margin-top: -1px;
+}
+
+#main-navigation li {
+  display:inline;
+  float:right;
+  list-style-type: none;
+}
+#sub-link-bar {
+	background: #689F38;
+	min-height: 10px;
+}
+
+#main-navigation li a {
+	margin-right: 5px;
+	font-size: 15px;
+	text-decoration: none;
+	color: white;
+	font-family: 'Gill Sans';
+	font-weight: bold;
+	padding: 10px;
+	outline: 0;
+	position: relative;
+	top: -2px;
+}
+
+#main-navigation li a:hover{
+  background:#FF4081;
+}
+
+#main-navigation li a:active{
+  background:#FF4081;
+}
+
+.sub-links {
+  display: none;
+	position: absolute;
+	width: 100%;
+	top: -30px;
+	text-align: left;
+	left: 0px;
+
+}
+
+#main-nav li .sub-links li a:hover{
+	background: #2d2620;
+  top:-30px;
+}
+
+#main-nav li a.close{
+	display: none;
+	position: absolute;
+}
+#main-nav li a.close:hover{
+	background: #900;
+}
+
+
+figure{
+  display: inline-block;
+width:25%;}
+
+img{
+  padding: 3px;
+  border-radius:20px;
+  border:1px solid #FF4081;
+  width: 100%;
+  height: 100%;
+}
+
+#gallery{
+  width: 80%;
+  margin:auto;
+  margin-top: 60px;
+}

@@ -1,0 +1,55 @@
+/*Clolors Used in the website
+.dark-primary-color    { background: #689F38; }
+.default-primary-color { background: #8BC34A; }
+.light-primary-color   { background: #DCEDC8; }
+.text-primary-color    { color: #212121; }
+.accent-color          { background: #FF4081; }
+.primary-text-color    { color: #212121; }
+.secondary-text-color  { color: #757575; }
+.divider-color         { border-color: #BDBDBD; }
+*/
+
+/*
+*/
+
+/*set the style for body*/
+body{
+  background: url(images/web.png) no-repeat center center fixed;
+  background-size:     cover;
+  text-align: center;
+  font-family: 'Gill Sans';
+}
+
+div{
+  margin: auto
+}
+
+h2, h3{
+  color:white;
+}
+#web_name {
+  padding-top: 200px;
+  font-size: 3em;
+}
+#book_author{
+  font-size: 1.1em;
+}
+
+a{
+  border-radius: 5px;
+  border: none;
+  height: 45px;
+  padding: 10px;
+  margin-bottom: 5px;
+  background-color:#E91E63;
+  color:white;
+  font-size: 1.1em;
+  width:20%;
+  text-decoration: none;
+  text-align: center;
+}
+
+a:hover{
+  background-color: #C2185B;
+    transition: .2s ease;
+}

@@ -1,0 +1,45 @@
+1. code learnt from online tutorial:
+This function is down by following a online tutorial
+Reference: original author:Connor Zwick
+link:https://code.tutsplus.com/tutorials/a-different-top-navigation--net-5891
+date:16 May 2017
+
+$("#main-navigation li a.main-link").hover(function() {
+  /*to show the close button to users*/
+  $("#main-navigation li a.close").fadeIn();
+  /*remove the active calss 'lable' for no matter which first level menu option was active previously*/
+  $("#main-navigation li a.main-link").removeClass("active");
+  /*And then, add the "active" class lable to only the option that is currently hoverred*/
+  $(this).addClass("active");
+  /*extend the space above the first level menu so the secondary menu can show*/
+  $("#sub-link-bar").animate({
+    height: "40px"
+  });
+  /*hide all the secondary links*/
+  $(".sub-links").hide();
+  /*only show the secondary links whoes parent is the menu option is being hoverd*/
+  $(this).siblings(".sub-links").fadeIn();
+  /*when the close button is clicked, the secondary menu closes*/
+  $("#main-navigation li a.close").click(function() {
+    $("#main-navigation li a.main-link").removeClass("active");
+    $(".sub-links").fadeOut();
+    $("#sub-link-bar").animate({
+      height: "10px"
+    });
+  });
+  $("#main-navigation li a.close").fadeOut();
+});
+
+2. images:
+background_music.png is downloaded from http://romannurik.github.io/AndroidAssetStudio/icons-generic.html#source.type=clipart&source.clipart=ac_unit&source.space.trim=1&source.space.pad=0&size=32&padding=8&color=rgba(0%2C%200%2C%200%2C%200.54)&name=ic_ac_unit.
+
+night_mode.png is downloaded from http://romannurik.github.io/AndroidAssetStudio/icons-generic.html#source.type=clipart&source.clipart=ac_unit&source.space.trim=1&source.space.pad=0&size=32&padding=8&color=rgba(0%2C%200%2C%200%2C%200.54)&name=ic_ac_unit
+
+day_mode.png is downloaded from http://romannurik.github.io/AndroidAssetStudio/icons-generic.html#source.type=clipart&source.clipart=ac_unit&source.space.trim=1&source.space.pad=0&size=32&padding=8&color=rgba(0%2C%200%2C%200%2C%200.54)&name=ic_ac_unit
+
+charlote_and_dad.png, charlote_feed_pig.png, happy_day.png, man.png,
+new_home.png, saw_spider.png, spider.png and visit.png are all copied
+from Charllote's web by E.B.WHITE pictures by GarthWilliams.
+
+3. music:
+Summer-久石譲.mp3 downloaded from http://www.xiami.com/song/2073511
